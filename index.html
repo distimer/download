@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISTIMER 다운로드</title>
+    <script>
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const query = params.get('os');
+
+            if (query === 'ios') {
+                // IOS 다운로드
+                window.location.href = 'https://apps.apple.com/kr/app/%EB%94%94%EC%8A%A4%ED%83%80%EC%9D%B4%EB%A8%B8/id6569249457?l=en-GB';
+            } else if (query === 'android') {
+                // Android 다운로드
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.distimer.app';
+            } else {
+                window.location.href = 'https://distimer.com';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>연결중...</h1>
+</body>
+</html>
